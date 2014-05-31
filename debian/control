@@ -1,0 +1,31 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: kde-kgpg-tweaks
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 8), faketime, git
+Homepage: https://github.com/Whonix/kde-kgpg-tweaks
+Vcs-Browser: https://github.com/Whonix/kde-kgpg-tweaks
+Vcs-Git: https://github.com/Whonix/kde-kgpg-tweaks.git
+Standards-Version: 3.9.4
+
+Package: kde-kgpg-tweaks
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: anon-gpg-tweaks
+Description: KGpg tweaks for Anonymity Linux Distributions
+ Deactivates KGpg's first run wizard. Uses hkp://qdigse2yzvuglcix.onion as
+ default keyserver. Disables tip of the day. Disables KGpg's systray.
+ .
+ By KDE default, KGpg starts in systray without any foreground window. Also by
+ KDE default, KGpg's tray icon is hidden. This is very confusing for users,
+ because when they start KGpg, they neither see a foreground window nor a tray
+ icon. Therefore we start KGpg in foreground without tray icon. Users are free
+ to change this setting.
+ .
+ This package only takes effect for newly created user accounts. Not for
+ existing user accounts. This package is most useful to help Linux distribution
+ maintainers setting divergent defaults.
