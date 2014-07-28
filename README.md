@@ -6,8 +6,9 @@ default keyserver. Disables tip of the day. Disables KGpg's systray.
 By KDE default, KGpg starts in systray without any foreground window. Also by
 KDE default, KGpg's tray icon is hidden. This is very confusing for users,
 because when they start KGpg, they neither see a foreground window nor a tray
-icon. Therefore we start KGpg in foreground without tray icon. Users are free
-to change this setting.
+icon. Therefore this package deactivates KGpg's tray icon, so KGpg gets
+started in foreground without tray icon. Users are free to change this
+setting.
 
 This package only takes effect for newly created user accounts. Not for
 existing user accounts. This package is most useful to help Linux distribution
