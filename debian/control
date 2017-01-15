@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 9), faketime, genmkfile
 Homepage: https://github.com/Whonix/kde-kgpg-tweaks
 Vcs-Browser: https://github.com/Whonix/kde-kgpg-tweaks
 Vcs-Git: https://github.com/Whonix/kde-kgpg-tweaks.git
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 
 Package: kde-kgpg-tweaks
 Architecture: all
